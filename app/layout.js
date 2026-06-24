@@ -2,7 +2,25 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BootstrapClient from './components/BootstrapClient';
+import { DM_Sans, Plus_Jakarta_Sans, Space_Grotesk } from 'next/font/google';
 
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-heading',
+  display: 'swap',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-numbers',
+  display: 'swap',
+});
 export const metadata = {
   metadataBase: new URL('https://www.crrgroups.in'),
   title: {
@@ -36,12 +54,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <head>
-        {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
       </head>
-      <body suppressHydrationWarning>
+      <body className={`${dmSans.variable} ${plusJakartaSans.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
         <BootstrapClient />
         <Navbar />
         <main>{children}</main>

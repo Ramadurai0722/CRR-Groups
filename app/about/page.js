@@ -57,7 +57,7 @@ export default function About() {
             <div className="col-lg-6">
               <div className="hero-v2-image-wrapper">
                 <div className="hero-v2-arrow-shape" />
-                <Image src="/media/About.webp" alt="CRR Groups professional team" className="hero-v2-img" style={{ borderRadius: "12px" }} width={518} height={624} priority={true} />
+                <Image src="/media/About.webp" alt="CRR Groups professional team" className="hero-v2-img" style={{ borderRadius: "12px" }} width={518} height={624} priority={true} fetchPriority="high" />
                 <div className="hero-v2-social-proof">
                   <div className="hero-v2-avatar-group">
                     <span className="hero-v2-avatar" style={{ background: "#f7941d" }}>CRR</span>

@@ -110,7 +110,7 @@ export default function Home() {
             <div className="col-lg-6">
               <div className="hero-v2-image-wrapper">
                 <div className="hero-v2-arrow-shape" />
-                <Image src="/media/Home/Hero.webp" alt="CRR Groups professional electricians and plumbers" className="hero-v2-img" width={600} height={600} priority={true} />
+                <Image src="/media/Home/Hero.webp" alt="CRR Groups professional electricians and plumbers" className="hero-v2-img" width={600} height={600} priority={true} fetchPriority="high" />
                 <div className="hero-v2-social-proof">
                   <div className="hero-v2-avatar-group">
                     <span className="hero-v2-avatar" style={{ background: "#f7941d" }}>RM</span>

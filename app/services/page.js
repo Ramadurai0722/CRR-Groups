@@ -84,7 +84,7 @@ export default function Services() {
                   <div style={{ position: "relative", width: "100%", display: "flex", justifyContent: "center", paddingTop: "35px" }}>
                     <div style={{ width: "220px", height: "220px", borderRadius: "var(--radius-xl)", overflow: "hidden", position: "relative", boxShadow: "0 10px 30px rgba(0,0,0,0.08)" }}>
                       <Image src={s.img} alt={s.title} style={{ objectFit: "cover" }} fill sizes="(max-width: 768px) 100vw, 33vw" />
-                      <div className="service-card-number" style={{ top: "5px", right: "15px", fontSize: "3.5rem", color: "rgba(247, 149, 29, 0.75)" }}>{String(index + 1).padStart(2, "0")}</div>
+                      <div className="service-card-number" style={{ top: "5px", right: "15px", fontSize: "3.5rem", color: "#b05800" }}>{String(index + 1).padStart(2, "0")}</div>
                     </div>
                     <div className="service-icon-wrap" style={{ position: "absolute", bottom: "-20px", left: "50%", transform: "translateX(-50%)", margin: 0, boxShadow: "0 10px 20px rgba(247,148,29,0.2)", zIndex: 3 }}><i className={`bi ${s.icon}`} /></div>
                   </div>

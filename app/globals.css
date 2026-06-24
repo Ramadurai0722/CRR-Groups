@@ -6,9 +6,7 @@
    CSS VARIABLES
    ===================== */
 :root {
-  --font-heading: "Plus Jakarta Sans", sans-serif;
-  --font-body: "DM Sans", sans-serif;
-  --font-numbers: "Space Grotesk", sans-serif;
+
   --primary: #f7941d;
   --primary-dark: #b05800;
   --primary-light: #ffb347;
@@ -833,7 +831,7 @@ img {
   right: 24px;
   font-weight: 800;
   font-size: 3.5rem;
-  color: rgba(0, 0, 0, 0.2); /* Fix for accessibility contrast */
+  color: rgba(0, 0, 0, 0.54); /* Fix for accessibility contrast */
   transition: all 0.4s ease;
   z-index: 0;
 }
