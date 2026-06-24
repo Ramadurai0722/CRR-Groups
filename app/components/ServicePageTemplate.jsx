@@ -50,6 +50,8 @@ export default function ServicePageTemplate({
                   width={800}
                   height={600}
                   priority={true}
+                  fetchPriority="high"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="hero-v2-social-proof shadow-lg" style={{ borderRadius: "16px", background: "var(--white)" }}>
                   <div className="hero-v2-avatar-group">
@@ -74,7 +76,7 @@ export default function ServicePageTemplate({
                 {intro}
               </p>
               <div className="mt-4 mb-5 bg-light p-4 rounded-4 shadow-sm border">
-                <h4 style={{ fontFamily: "var(--font-heading)", fontSize: "1.2rem", fontWeight: 700, marginBottom: "20px" }}>Key Service Highlights</h4>
+                <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.2rem", fontWeight: 700, marginBottom: "20px" }}>Key Service Highlights</h3>
                 {benefits.slice(0, 4).map((b, index) => (
                   <div key={index} className="d-flex align-items-start gap-3 mb-3">
                     <div style={{ width: "28px", height: "28px", borderRadius: "50%", background: "var(--primary-ultra-light)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
@@ -148,7 +150,7 @@ export default function ServicePageTemplate({
                     <div className="why-icon-wrap" style={{ background: "rgba(247,148,29,0.2)", color: "var(--primary-light)", width: "60px", height: "60px", fontSize: "1.5rem" }}>
                       <i className={`bi ${f.icon}`} />
                     </div>
-                    <h5 className="text-white mt-4 mb-3" style={{ fontSize: "1.2rem", fontWeight: 700 }}>{f.title}</h5>
+                    <h3 className="text-white mt-4 mb-3" style={{ fontSize: "1.2rem", fontWeight: 700 }}>{f.title}</h3>
                     <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: "1.7" }}>{f.desc}</p>
                   </div>
                 </div>

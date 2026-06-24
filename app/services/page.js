@@ -58,8 +58,8 @@ export default function Services() {
           <div className="row g-3 justify-content-center">
             {benefits.map((b) => (
               <div key={b.label} className="col-lg-2 col-md-4 col-6 text-center">
-                <div style={{ color: "var(--white)", display: "flex", alignItems: "center", justifyContent: "center", gap: 10 }}>
-                  <i className={`bi ${b.icon}`} style={{ fontSize: "1.25rem", color: "rgba(255,255,255,0.8)" }} />
+                <div style={{ color: "var(--dark)", display: "flex", alignItems: "center", justifyContent: "center", gap: 10 }}>
+                  <i className={`bi ${b.icon}`} style={{ fontSize: "1.25rem", color: "rgba(0,0,0,0.6)" }} />
                   <span style={{ fontSize: "0.9rem", fontFamily: "var(--font-heading)", fontWeight: 600 }}>{b.label}</span>
                 </div>
               </div>
@@ -89,11 +89,11 @@ export default function Services() {
                     <div className="service-icon-wrap" style={{ position: "absolute", bottom: "-20px", left: "50%", transform: "translateX(-50%)", margin: 0, boxShadow: "0 10px 20px rgba(247,148,29,0.2)", zIndex: 3 }}><i className={`bi ${s.icon}`} /></div>
                   </div>
                   <div style={{ padding: "45px 25px 30px", display: "flex", flexDirection: "column", flexGrow: 1, textAlign: "center" }}>
-                    <h4 className="service-card-title" style={{ fontSize: "1.2rem" }}>{s.title}</h4>
+                    <h3 className="service-card-title" style={{ fontSize: "1.2rem" }}>{s.title}</h3>
                     <p className="service-card-desc" style={{ marginBottom: "20px", fontSize: "0.85rem" }}>{s.description}</p>
                     <div className="d-flex flex-wrap justify-content-center gap-2 mt-auto">
                       {s.features.slice(0, 3).map((f) => (
-                        <span key={f} style={{ background: "var(--primary-ultra-light)", color: "var(--primary)", fontSize: "0.7rem", fontWeight: 600, padding: "4px 10px", borderRadius: 50, fontFamily: "var(--font-heading)", border: "1px solid rgba(247,148,29,0.15)", transition: "all 0.3s ease" }}>{f}</span>
+                        <span key={f} style={{ background: "var(--primary-ultra-light)", color: "var(--primary-dark)", fontSize: "0.7rem", fontWeight: 600, padding: "4px 10px", borderRadius: 50, fontFamily: "var(--font-heading)", border: "1px solid rgba(247,148,29,0.15)", transition: "all 0.3s ease" }}>{f}</span>
                       ))}
                     </div>
                   </div>
@@ -123,7 +123,7 @@ export default function Services() {
             ].map((s) => (
               <div key={s.step} className="process-step">
                 <div className="process-step-number">{s.step}</div>
-                <div className="process-step-content"><h6>{s.title}</h6><p>{s.desc}</p></div>
+                <div className="process-step-content"><h3>{s.title}</h3><p>{s.desc}</p></div>
               </div>
             ))}
           </div>
